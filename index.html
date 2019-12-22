@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="script.js"></script>
+        <title>Mon CV</title>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="300">
+        <header class="navbar navbar-default navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Curriculum Vitae</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTarget">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse " id="navbarTarget">
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#etudes">Études</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiences">Expériences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hobby">Hobby</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#langues">Langues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+                       
+        </header>
+        
+        <section id="about" class="container-fluid">
+            <div id="blankDiv"></div>
+            <div class="row">
+                <div id="profilePicture" class="col-md-6">
+                    <!-- float-md-right : float-right uniquement quand > md -->
+                    <img  src="Image/moi.jpeg" alt="Jonathan" class="rounded-circle img-thumbnail float-md-right">
+
+                </div>
+               
+                <div id="job" class="col-md-6 text-md-left">
+                    <div class="trait-top"><div></div></div>
+                    <div id="me">
+                        <h2>Jonathan DU VERGER</h2>
+                        <h1>Développeur Web</h1>
+                        <h3>(En apprentissage)</h3>
+                    </div>
+                    <div class="trait-bottom"></div>
+                    
+                </div>
+            </div>
+
+        </section>
+        
+        <section id="etudes" class="container">
+            
+            <h2>Travail actuel et études</h2>
+            <div class="title-separation"></div>
+            <div class="cardContainer">      
+                <div id="card1" class="studyCard card">
+                    <h5 >Passé</h5>
+                    <div class="separation"></div>
+                    <div class="cardContenu">
+                        <p>2013-2017</p>
+                        <p>Université de Bordeaux Montaigne : Licence de japonais, Mention Très Bien, dont 2 ans au Japon</p>
+                        <p>Diplôme du JLPT Japanese Language Proficiency Test : Niveau N1 (le plus élevé)</p>
+                    </div>
+                </div>  
+                <div id="card2" class="cardActive card">                 
+                    <h5>Actuellement</h5>
+                    <div class="separation"></div>
+                    <div class="cardContenu">                        
+                        <p>2017 - 2020</p>
+                        <p>・Serveur/Responsable de salle : Restaurant le Café Japonais, Bordeaux</p>
+                        <p>・Étudie le développement web en autodidacte. Formation Udemy : <a href="https://www.udemy.com/course/formation-developpeur-web/" target="_blank">Formation Complète Développeur Web</a> </p>
+                        <p>・Réalise de petits jeux en C# sur Unity (cf : <a href="#hobby">Hobby</a>)</p>
+                    </div>                   
+                </div>      
+                <div id="card3" class="studyCard card">
+                    <h5>Futur</h5>
+                    <div class="separation"></div>
+                    <div class="cardContenu">
+                        <p>Juin 2020</p>
+                        <p>Reconversion professionnelle</p>
+                        <p>La Coding Academy (Bordeaux) :</p>
+                        <p>Formation <a href="https://www.coding-academy.fr" target="_blank">Code & Go</a></p>
+                    </div>
+                </div>         
+            </div>
+        
+        </section>
+        
+        <section id="experiences">
+            <h2>Expériences en développement Web</h2>
+            <div class="title-separation"></div>
+            <p>Sites réalisés seuls :</p>
+            <div>
+                <div class="myWebSites">
+                    <h4>HTML/CSS</h4>
+                    <div id="imgContainer1">
+                        <a href="https://jadona974.github.io/Mes-Favoris" target="_blank">    
+                            <br>
+                            <p>Site vers Mes Favoris</p>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="myWebSites">
+                    <h4>HTML/CSS/Javascript</h4>
+                    <div id="imgContainer2">
+                        <a href="#" target="_blank">    
+                            <br>
+                            <p>Le présent CV</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="hobby" class="container">
+            <h2>Hobby</h2>
+            <div class="title-separation"></div>
+            <div>
+                Développement de petits jeux sur mon temps libre : 
+            </div>
+            <div id="myCarousel" class="carousel carousel-fade slide text-center" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner d-block w-100">
+                    <div id="paintgirl" class="carousel-item active">
+                        <h4>PaintGirl</h4>
+                        <p>Jeu de plateforme réalisé entièrement seul </p>
+                        <p>(Langage C# - Unity)</p>
+                        <a href="#">Lien vidéo</a>
+                        <img class="d-block w-100" src="Image/PG.png" alt="PaintGirl">
+                    </div>
+
+                    <div id="escapegame" class="carousel-item">
+                        <h4>2mnEscapeGame</h4>
+                        <p>Prototype d'un jeu d'escape game </p>
+                        <p>(Langage C# - Unity)</p>
+                        <a href="#">Lien vidéo</a>
+                        <img class="d-block w-100" src="Image/2MnEscapeGame.png" alt="2Mn Escape Game">
+                    </div>
+
+                    <div id="oni" class="carousel-item">
+                        <h4>Oni Gokko</h4>
+                        <p>En cours de développement </p>
+                        <p>(Langage SmileBasic - PetitComputer 4, Nintendo Switch)</p>
+                        <a>Lien vidéo</a>
+                        <img src="Image/PetitComp.jpg" alt="Oni Gokko">
+                    </div>
+                </div>
+                
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                
+            </div>
+        </section>
+        
+        <section id="langues" class="container-fluid">
+            <h2>Langues</h2>
+            <div class="title-separation"></div>
+            <div class="row">
+                <div id="anglais" class="languesDiv col-md-6">
+                    <h4>Anglais</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:90%">Lu 95%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:55%">Parlé 55%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:75%">Écrit 75%</div>
+                    </div>
+                </div>
+                <div id="japonais" class="languesDiv col-md-6">
+                    <h4>Japonais</h4>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:90%">Lu 90%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:80%">Parlé 80%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:85%">Écrit 85%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="container">
+            <h2>Me contacter</h2>
+            <div class="title-separation"></div>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Nom/Prénom">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="subject" placeholder="Sujet">
+                </div>
+                <div class="form-group">
+                    <textarea type="text" class="form-control" id="message" placeholder="Votre message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default disabled">Envoyer</button>
+            </form>
+            
+        </section>
+         
+        <footer>
+            <img src="Image/JonSprite.png">
+            <p>Made by Jonathan DU VERGER</p>
+            <p><small>V.1.0</small></p>
+        </footer>
+    </body>
+    
+   
+</html>

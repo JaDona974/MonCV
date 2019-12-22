@@ -1,0 +1,644 @@
+body
+{
+    position: relative;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-weight: bold;
+}
+
+ul
+{
+    list-style: none;
+}
+@media (max-width: 991px)
+{
+    #etudes
+    {
+        height: 500px !important;
+    }
+    .cardContainer
+    {
+        height: 400px !important;
+    }
+    .cardActive
+    {
+        height: 350px !important;
+        width:50%;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 10px;
+        background-color: #ddd;
+        text-align: center;
+        display: inline-block;
+        border: 2px solid #444;
+    /*    float:left;*/
+    /*    position:relative;*/
+    }
+    #etudes h5
+    {
+        font-size: 15px !important;
+    }
+}
+@media (max-width:767px)
+{
+    .trait-top
+    {
+        margin-top:0px !important; 
+    }
+    .trait-top div
+    {
+        width:100% !important;
+    }
+    .trait-bottom
+    {
+        width:100% !important;
+        margin-bottom: 30px !important;
+    }
+    
+    /*@ ETUDES */ 
+    .studyCard
+    {
+        float:none !important;
+        display:block !important;
+        width:90% !important;
+        height:70px !important;
+    }
+    .cardActive
+    {
+        float:none !important;
+        display:block !important;
+        width:90% !important;
+        margin: 0; !important;
+    }
+    #etudes
+    {
+        height:600px !important;
+    }
+    .cardContainer
+    {
+        height:450px !important;
+    }
+    /* @ EXPERIENCES */
+    #experiences
+    {
+        height: 850px !important;
+    }
+    .myWebSites
+    {
+/*        margin: 10px 50px !important;*/
+        margin: 10px 40px !important;
+    }
+    #imgContainer1
+    {
+        filter:none !important;
+    }
+    #imgContainer2
+    {
+        filter:none !important;
+    }
+    
+    /* @ HOBBY */
+    #myCarousel
+    {
+        height: 400px !important; 
+    }
+    .carousel-indicators
+    {
+        margin-top: 0px;
+    }
+    .carousel-inner
+    {
+        width: 800px;
+        height: 400px !important;
+        margin: 0 auto;
+    }
+    .carousel-inner p
+    {
+        padding: 0 10px;
+        vertical-align: middle !important;
+/*        height:50px;*/
+        text-align: center;
+    }
+    .carousel-inner img
+    {
+        width: 100%;
+        height: 300px !important;
+    }
+    .carousel-item
+    {
+        background-color: #ddd;
+        border-radius: 5px;
+    }
+    .carousel-control-prev
+    {
+        margin-top:114px !important;
+        height: 300px !important;
+        background-color: rgba(255,255,255,0.2);
+    }
+    .carousel-control-next
+    {
+        margin-top:114px !important;
+        height: 300px !important;
+        background-color: rgba(255,255,255,0.2);
+    }
+}
+
+@media (max-width:500px)
+{
+     #etudes
+    {
+        height:630px !important;
+    }
+    
+    /* EXPERIENCES*/
+    .myWebSites
+    {
+        margin: 10px 0px !important;
+    }
+    
+}
+
+/* HEADER-NAV */
+header
+{   
+    color: #fff;
+    background-color: #111;
+/*    margin: 0, auto;*/
+/*    min-width: 300px;*/
+}
+.navbar-brand
+{
+    margin-right: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+header li a
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+}
+header li a:hover
+{
+    background-color:#eee;   
+    color: #000 !important;
+}
+
+/* ABOUT */
+#about
+{
+    padding:0;
+    background-color: #ddd;
+}
+#about #blankDiv
+{
+    height:56px;
+    width: 100%;
+}
+.row
+{
+    padding-right:0 !important;
+    margin-right: 0 !important;
+}
+#profilePicture
+{    
+    
+    padding-right: 0;
+    text-align: center;
+}
+#profilePicture img
+{
+    margin-top: 30px;
+    margin-bottom: 30px;    
+    margin-right:0;
+    width:300px;
+    height:300px;
+}
+#job
+{
+    text-align: center;
+    padding-right:0px;
+}
+.trait-top
+{ 
+    width:100%;
+    margin-top:70px;  
+}
+
+#about #job #me
+{
+    margin-top: 30px;
+    margin-bottom: 30px; 
+}
+.trait-top div
+{
+    height:3px;
+    width:365px;
+    background-color: #000;
+}
+.trait-bottom
+{
+    height:3px;
+    width:365px;   
+    background-color: #000;
+}
+
+
+
+/* ETUDES */
+#etudes
+{
+/*    min-height: 450px;*/
+    height: 450px;
+    padding:20px;
+    background-color: #555;
+    border-radius: 10px;
+}
+#etudes h2
+{
+    color: #fff;
+    text-align: center;
+}
+.cardContainer
+{
+    height: 350px;
+    text-align: center;
+    position:relative;
+}
+.cardActive
+{
+    height: 300px;
+    padding:10px;
+    width:50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #444;
+/*    float:left;*/
+/*    position:relative;*/
+}
+.studyCard
+{
+    height: 200px;
+    width:20%;
+    padding:10px;
+    color: #aaa;
+    border-radius: 5px;
+    background-color: #888;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+/*    float:left;*/
+/*    position:relative;*/
+}
+.studyCard .cardContenu
+{
+    display: none;
+}
+.cardContenu
+{
+    padding: 5px 20px 5px 20px;
+}
+.studyCard:hover
+{
+    cursor:pointer;
+    background-color:#eee;
+}
+#etudes h5
+{
+    margin:0;
+}
+.separation
+{
+    height: 1px;
+    width:50%;
+    display:inline-block;
+    background-color: #000;
+}
+.cardContenu
+{
+/*    display:inline-block;*/
+    margin-top:20px;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+.title-separation
+{
+    text-align:center;
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+#card1
+{
+    border-radius: 100px 5px 5px 100px;
+    float: left;
+}
+#card2
+{
+/*    left:2%;*/
+    margin: 0, auto;
+    text-align: center;
+}
+#card3
+{
+/*    left :2%;*/
+    border-radius: 5px 100px 100px 5px;
+    float: right;
+}
+#etudes p 
+{
+    margin: 0;
+}
+
+/* EXPERIENCES */
+#experiences
+{
+    background-color:coral;
+    height: 500px;
+    padding-top:20px;
+    text-align: center;
+}
+#experiences h2
+{
+    color: #444;
+    text-align: center;
+}
+.myWebSites
+{
+    height: 300px;
+    width: 300px;
+    margin: 0 20px;
+    background-color:#fff;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    display: inline-block;
+}
+#experiences h4
+{
+    margin-top: 5px;
+    margin-bottom: 4px;
+}
+#experiences img
+{
+/*    position:relative;*/
+    height:260px;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+}
+#experiences a
+{
+/*    position:absolute;*/
+}
+#imgContainer1
+{
+/*    border: 1px solid black;*/
+    border-radius: 0 0 15px 15px;
+    background-image: url(Image/MesFavoris.png);
+    background-size:300px 265px;
+    height: 260px;
+    width: 296px;
+    filter:grayscale(100%);
+/*    display:inline-block;*/
+}
+#imgContainer2
+{
+/*    border: 1px solid black;*/
+    border-radius: 0 0 15px 15px;
+    background-image: url(Image/MonCV.png);
+    background-size:300px 265px;
+    height: 260px;
+    width: 296px;
+    filter:grayscale(100%);
+}
+#imgContainer1:hover
+{
+    filter:none;
+        
+}
+#imgContainer2:hover
+{
+    filter:none;
+}
+
+#experiences a p
+{
+    margin-top:70px;
+    font-size: 30px;
+    background-color: skyblue;
+}
+.myWebSites
+{
+    margin: 0 40px;
+}
+
+/* HOBBY */
+#hobby
+{
+    background-color: #fff;
+    text-align: center;
+    padding:20px;
+}
+#hobby h2
+{
+    margin-top: 5px;
+}
+#hobby p
+{
+    margin:0;
+}
+#hobby .title-separation
+{
+    background-color: black;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+#hobby h4
+{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#paintgirl h4
+{
+    background-color: #ffda00;
+    width: 200px;
+}
+#escapegame h4
+{
+    background-color: #3f7fac;
+    width: 250px;
+}
+#oni h4
+{
+    background-color: #37978b;
+    width: 200px;
+}
+#oni a
+{
+    color:gray;
+}
+
+
+#myCarousel
+{
+    height: 600px; 
+}
+.carousel-indicators
+{
+    margin-top: 0px;
+}
+.carousel-inner
+{
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+}
+.carousel-inner img
+{
+    width: 100%;
+    height: 500px;
+}
+.carousel-item
+{
+    background-color: #ddd;
+    border-radius: 5px;
+}
+.carousel-control-prev
+{
+    margin-top:114px;
+    height: 486px;
+    background-color: rgba(255,255,255,0.2);
+}
+.carousel-control-next
+{
+    margin-top:114px;
+    height: 486px;
+    background-color: rgba(255,255,255,0.2);
+}
+.carousel-control-prev-icon
+{
+    filter: invert(100%);
+}
+.carousel-control-next-icon
+{
+    filter: invert(100%);  
+}
+.passeLigne
+{
+    break-inside: auto;
+}
+
+/* LANGUES */
+#langues
+{
+    background-color:burlywood;
+    text-align: center;
+    padding: 20px;
+}
+#langues .title-separation
+{
+    background-color:#fff;
+}
+.languesDiv
+{
+    background-size: 100% 100%;
+    float:none !important;
+    border-radius: 30%;
+    max-width: 500px;
+    height: 200px;
+    margin: 5px 5px;
+    display: inline-block;
+}
+#langues .row
+{
+    display: block;
+}
+#anglais
+{
+    background-image: url(Image/GBFlag2.png); 
+}
+#japonais
+{
+    background-image: url(Image/JFlag.png);
+}
+.progress
+{
+    width: 80%;
+    height: 30px;
+    margin: 15px auto;
+    border:1px solid gray;
+}
+.progress-bar
+{
+    margin: 5px 0 5px 0;
+}
+
+/* CONTACT */
+#contact
+{
+    height: 500px;
+    text-align: center;
+    padding: 20px;
+}
+#contact .title-separation
+{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: black;
+    width: 250px;
+}
+#contact form
+{
+    max-width: 500px;
+    margin: 0 auto;
+}
+#contact textarea
+{
+    height:100px;
+}
+#contact button
+{
+/*    background-color:cornflowerblue;  active */ 
+    background-color:gray;  /* disabled */ 
+}
+#contact button:hover
+{
+    cursor: text; /* disabled */
+}
+
+/* FOOTER */
+footer
+{
+    height: 210px;
+    background-color: #444;
+    text-align: center;
+}
+footer img
+{
+    padding-top: 30px;
+}
+footer p
+{
+    padding-top:10px;
+    color: #fff;
+}
+footer small
+{
+    color: rgba(255,255,255,0.6);
+}
+
+
+
+
