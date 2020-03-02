@@ -185,6 +185,11 @@ header li a:hover
     background-color:#eee;   
     color: #000 !important;
 }
+.nav-link
+{
+/*    position: relative;*/
+    top: -200px !important;
+}
 
 /* ABOUT */
 #about
@@ -248,6 +253,23 @@ header li a:hover
 
 
 /* ETUDES */
+/*
+section::before
+{
+  display: block !important; 
+  content: " " !important; 
+  margin-top: -285px !important; 
+  height: 285px !important; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+*/
+.span-scroll
+{
+    margin-top: -60px;        /* Size of fixed header */
+    padding-bottom: 60px; 
+    display: block; 
+}
 #etudes
 {
 /*    min-height: 450px;*/
@@ -638,7 +660,6 @@ footer small
 {
     color: rgba(255,255,255,0.6);
 }
-
 
 
 
