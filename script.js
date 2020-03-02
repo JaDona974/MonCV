@@ -92,6 +92,16 @@ $(function(){
         console.log("leave");
     })
     
+    $(".navbar a").on("click", function(event){
+       
+        event.preventDefault(); //elle va arrêter l'event (?)
+        var hash = this.hash; 
+        
+        $("body,html").animate({scrollTop: $(hash).offset().top}, 900, function(){window.location.hash = hash;})
+        //écrire : "body,html" pour que ça fonctionne dans firefox : eeeuh sur google chrome aussi du coup
+       
+    });
+    
 })
 
 /*
