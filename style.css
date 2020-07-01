@@ -381,6 +381,7 @@ section::before
     margin: 0;
 }
 
+
 /* EXPERIENCES */
 #experiences
 {
@@ -502,15 +503,17 @@ section::before
     background-color: #3f7fac;
     width: 250px;
 }
-#oni h4
+#gridwars h4
 {
     background-color: #37978b;
     width: 200px;
 }
-#oni a
+#galastarz h4
 {
-    color:gray;
+    background-color: #d5100a;
+    width:200px;
 }
+
 
 
 #myCarousel
@@ -610,7 +613,7 @@ section::before
 /* CONTACT */
 #contact
 {
-    height: 500px;
+    /* height: 500px; */
     text-align: center;
     padding: 20px;
 }
@@ -621,6 +624,27 @@ section::before
     background-color: black;
     width: 250px;
 }
+.contact__mail{
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 200px;
+    background-color: #3f7fac;
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px #444;
+    text-decoration: none;
+
+    transition: all 0.3s ease-in-out;
+}
+.contact__mail:hover{
+    background-color: #37946e;
+    color: black;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px #fff;
+}
+
+
 #contact form
 {
     max-width: 500px;
@@ -660,6 +684,7 @@ footer small
 {
     color: rgba(255,255,255,0.6);
 }
+
 
 
 
