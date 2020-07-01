@@ -1,120 +1,114 @@
-$(function(){
-    
-    var c1=$("#card1"),c2=$("#card2"),c3=$("#card3");    
+$(function () {
+
+    var c1 = $("#card1"), c2 = $("#card2"), c3 = $("#card3");
     var activeCard = c2;
     var onAnimation = false;
     var delay = 100 //milliseconds
     var smallScreen;
-    
-    update();
-    
-    function update(){
-        
-//        console.log("Max width : " + window.screen.availWidth);
-//        console.log("SmallScreen : " + smallScreen);
 
-        if(window.window.innerWidth < 768)
-        {
-            
+    update();
+
+    function update() {
+
+        //        console.log("Max width : " + window.screen.availWidth);
+        //        console.log("SmallScreen : " + smallScreen);
+
+        if (window.window.innerWidth < 768) {
             smallScreen = true;
         }
-        else
-        {
+        else {
             smallScreen = false;
         }
-        if(smallScreen)
-        {
-
-        }
-        
         setTimeout(update, delay);
     }
-    
-    /* ETUDES : ON CLICK EVENT */
-    $(".cardContainer .card").on("click", function(){
-//        console.log(onAnimation);
-        if(!onAnimation)
-        {
-            var c = $(this);
-//            console.log(c);
 
-            if(!c.hasClass("cardActive"))
-            {            
+    /* ETUDES : ON CLICK EVENT */
+    $(".cardContainer .card").on("click", function () {
+        //        console.log(onAnimation);
+        if (!onAnimation) {
+            var c = $(this);
+            //            console.log(c);
+
+            if (!c.hasClass("cardActive")) {
                 onAnimation = true;
-                if(!smallScreen)
-                {
+                if (!smallScreen) {
                     activeCard.animate({
                         width: "20%",
                         height: "200px"
-                    },200);
+                    }, 200);
                     c.animate({
                         width: "50%",
                         height: "300px",
                         marginRight: "10px",
-                        marginLeft: "10px",    
+                        marginLeft: "10px",
                         backgroundColor: "#ddd"
-                    },500,function(){
+                    }, 500, function () {
                         c.addClass("cardActive").removeClass("studyCard");
                         onAnimation = false
                     });
                 }
-                else
-                {
+                else {
                     activeCard.animate({
-//                        width: "90%",
                         height: "70px"
-                    },200);
+                    }, 200);
                     c.animate({
-//                        width: "90%",
                         height: "300px",
                         marginRight: "10px",
-                        marginLeft: "10px",    
+                        marginLeft: "10px",
                         backgroundColor: "#ddd"
-                    },500,function(){
+                    }, 500, function () {
                         c.addClass("cardActive").removeClass("studyCard");
                         onAnimation = false
                     });
                 }
 
                 activeCard.removeClass("cardActive").addClass("studyCard");
-    //            activeCard.eq(2).hide();
+                //            activeCard.eq(2).hide();
                 activeCard = c;
             }
-            
+
         }
     })
 
     /* EXPERIENCES */
-    $("#imgContainer1, #imgContainer2").hover(function(){
+    $("#imgContainer1, #imgContainer2").hover(function () {
         console.log("enter");
-        
-    }, function(){
+
+    }, function () {
         console.log("leave");
     })
-    
-    $(".navbar a").on("click", function(event){
-       
-        event.preventDefault(); //elle va arrêter l'event (?)
-        var hash = this.hash; 
-        
-        $("body,html").animate({scrollTop: $(hash).offset().top}, 900, function(){window.location.hash = hash;})
-        //écrire : "body,html" pour que ça fonctionne dans firefox : eeeuh sur google chrome aussi du coup
-       
+
+    $(".navbar a").on("click", function (event) {
+
+        event.preventDefault();
+        var hash = this.hash;
+
+        $("body,html").animate({ scrollTop: $(hash).offset().top }, 900, function () { window.location.hash = hash; })
+
     });
-    
+
+    $(".hobby_link").on("click", function (event) {
+
+        event.preventDefault();
+        var hash = this.hash;
+
+        $("body,html").animate({ scrollTop: $(hash).offset().top }, 900, function () { window.location.hash = hash; })
+
+    });
+
 })
 
 /*
-    var c1=$("#card1"),c2=$("#card2"),c3=$("#card3");    
+    var c1=$("#card1"),c2=$("#card2"),c3=$("#card3");
     var activeCard = c2;
-      
+
     $(".cardContainer .card").on("click", function(){
-  
+
         var c = $(this);
         console.log(c);
-        
+
         if(!c.hasClass("cardActive"))
-        {            
+        {
             c.addClass("cardActive").removeClass("studyCard");
             activeCard.removeClass("cardActive").addClass("studyCard");
             activeCard.eq(2).hide();
